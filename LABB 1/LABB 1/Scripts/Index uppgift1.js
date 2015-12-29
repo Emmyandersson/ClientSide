@@ -5,3 +5,4 @@ function calculateSquare() {
     var tal = document.getElementById('tal').value;
     document.getElementById('answer').innerHTML = Math.sqrt(tal);
 }
+
