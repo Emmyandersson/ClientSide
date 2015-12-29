@@ -80,9 +80,11 @@
     <Content Include="Scripts\uppgift2.js" />
     <Content Include="Scripts\uppgift3.js" />
     <Content Include="Scripts\uppgift4.js" />
+    <Content Include="Scripts\uppgift5.js" />
     <Content Include="uppgift2.html" />
     <Content Include="uppgift3.html" />
     <Content Include="uppgift4.html" />
+    <Content Include="uppgift5.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
