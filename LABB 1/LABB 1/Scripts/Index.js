@@ -5,5 +5,5 @@ var squareResult = calculateSquare(tal);
 document.getElementById('answer').innerHTML = squareResult;
 
 function calculateSquare(tal) {
-    return tal*tal;
+    return Math.sqrt(tal);
 }
