@@ -78,7 +78,9 @@
     <Content Include="Index uppg1.html" />
     <Content Include="Scripts\Index uppgift1.js" />
     <Content Include="Scripts\uppgift2.js" />
+    <Content Include="Scripts\uppgift3.js" />
     <Content Include="uppgift2.html" />
+    <Content Include="uppgift3.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
