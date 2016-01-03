@@ -7,7 +7,7 @@ var discount = 0.25;
 function happyHourPrices() {
     var prices = document.getElementsByClassName("price");
 
-    if (today.getHours() >=18 && today.getHours() <= 20 ) {
+    if (today.getHours() >= 18 && today.getHours() <= 20) {
         for (var i = 0; i < prices.length; i++) {
             var price = Number(prices[i].innerHTML) - (Number(prices[i].innerHTML) * discount);
             prices[i].innerHTML = price.toFixed(2);
@@ -18,6 +18,8 @@ function happyHourPrices() {
 
 happyHourPrices();
 addImagesToSpans();
+TodaysOffer();
+
 
 /*Add pictures function to span:*/
 
@@ -36,10 +38,21 @@ function addImagesToSpans() {
 
 
 
-
 /*Add todays offer function. 
 Make price background red. 
 Reduce price by another 20%:*/
+
+function TodaysOffer() {
+    var date = new Date();
+    var discount = 0.20;
+    var days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+
+    var day = days[date.getDay()];
+
+   
+
+}
+
 
 /*Stretch exercises: (increasing tuffness for each number!)
 
