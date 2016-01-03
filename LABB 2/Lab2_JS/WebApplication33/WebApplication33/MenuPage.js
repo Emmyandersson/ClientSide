@@ -8,7 +8,8 @@ var discount = 0.25;
 function happyHourPrices() {
     if (today.getHours() >=18 && today.getHours() <= 20 ) {
         for (var i = 0; i < prices.length; i++) {
-            
+            var price = Number(prices[i].innerHTML) - (Number(prices[i].innerHTML) * discount);
+            prices[i].innerHTML = price.toFixed(2);
         }
     }
 }
@@ -19,6 +20,10 @@ happyHourPrices();
 
 /*Add pictures function to span:*/
 var spansToBeChanged = document.getElementsByTagName("span");
+for (var i = 0; i < spansToBeChanged.length; i++) {
+    var image = document.createElement("img");
+}
+
 
 
 
