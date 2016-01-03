@@ -1,11 +1,12 @@
 ﻿//happy hour logic:  &
 //Adjust price function: (add .toFixed(2) for 2 decimals)
 
-var prices = document.getElementsByClassName("price");
 var today = new Date();
 var discount = 0.25;
 
 function happyHourPrices() {
+    var prices = document.getElementsByClassName("price");
+
     if (today.getHours() >=18 && today.getHours() <= 20 ) {
         for (var i = 0; i < prices.length; i++) {
             var price = Number(prices[i].innerHTML) - (Number(prices[i].innerHTML) * discount);
@@ -16,13 +17,22 @@ function happyHourPrices() {
 //Method calls:
 
 happyHourPrices();
-
+addImagesToSpans();
 
 /*Add pictures function to span:*/
-var spansToBeChanged = document.getElementsByTagName("span");
-for (var i = 0; i < spansToBeChanged.length; i++) {
-    var image = document.createElement("img");
+
+
+function addImagesToSpans() {
+    var spansToBeChanged = document.getElementsByTagName("span");
+
+    for (var i = 0; i < spansToBeChanged.length; i++) {
+        var image = document.createElement("img");
+        image.setAttribute("src", "../Images/Hamburger.png");
+        spansToBeChanged[i].appendChild(image);
+    }
 }
+
+
 
 
 
