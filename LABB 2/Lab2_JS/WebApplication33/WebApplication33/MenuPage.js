@@ -50,6 +50,8 @@ function TodaysOffer() {
     var day = document.getElementById(days[date.getDay()]);
     day.className += " " + "todaysOffer";
 
+  day.innerHTML = Number(day.innerHTML) - (Number(day.innerHTML) * discount).toFixed(2);
+
 
 }
 
