@@ -47,9 +47,9 @@ function TodaysOffer() {
     var discount = 0.20;
     var days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 
-    var day = days[date.getDay()];
+    var day = document.getElementById(days[date.getDay()]);
+    day.className += " " + "todaysOffer";
 
-   
 
 }
 
