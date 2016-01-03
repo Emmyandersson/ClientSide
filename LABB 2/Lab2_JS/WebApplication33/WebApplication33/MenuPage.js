@@ -1,13 +1,26 @@
-﻿//happy hour logic:
-var price = document.getElementsByClassName("price");
-var happyHourTime = new Date();
-
-//Method calls:
-
-
+﻿//happy hour logic:  &
 //Adjust price function: (add .toFixed(2) for 2 decimals)
 
+var prices = document.getElementsByClassName("price");
+var today = new Date();
+var discount = 0.25;
+
+function happyHourPrices() {
+    if (today.getHours() >=18 && today.getHours() <= 20 ) {
+        for (var i = 0; i < prices.length; i++) {
+            
+        }
+    }
+}
+//Method calls:
+
+happyHourPrices();
+
+
 /*Add pictures function to span:*/
+var spansToBeChanged = document.getElementsByTagName("span");
+
+
 
 /*Add todays offer function. 
 Make price background red. 
