@@ -38,4 +38,19 @@ Bonus exercises:
 
 */
 //Uppgift 3:
-alert("inre höjd " +window.innerHeight + " pixlar");
+
+//Properties
+alert("inre höjd " + window.innerHeight + " pixlar");
+alert("Den nuvarande URL:en är: " + window.location);
+alert("Hur långt sidan scrollats : " + window.pageYOffset);
+var text = document.getElementById("testar");
+text.innerHTML = "Inre bredden på sidan: " + window.innerWidth;
+text.style.color = "pink";
+text.style.backgroundColor = "black";
+
+//Metoderna
+//window.print("Print me!");
+//window.open("http://www.hd.se");
+//window.alert("Hejsan!");
+
+//Uppgift 4:
