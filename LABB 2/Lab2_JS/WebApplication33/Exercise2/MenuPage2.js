@@ -1,17 +1,4 @@
-﻿/*
-1. create 7 hamburger objects using literal notation 
-   use attributes name, size, dayOfTheWeek and price(page. 104 in book)
-   Please use the same html syntax of an article as in exercise1.
-
- 
-
-2. create Product objects with constructor notation, 
-   use the parameters name, size, price, dayOfTheWeek  (page. 108 in book)
-3. add 7 drinks to the page using Product.
-4. add 7 pizzas to the page using Product.
-5. add 7 subs to the page using Product.
-6. GO to file FixIt.html
-*/
+﻿
 //DRINKS
 //Subs 
 
@@ -130,3 +117,50 @@ for (var i = 0; i < drinksArray.length; i++) {
 
 
 }
+
+//Uppgift 4
+var vesuvio = Product("Vesuvio", "Family", 120, "Monday");
+var kebab = Product("Kebabpizza", "Original", 75, "Tuesday");
+var margarita = Product("Margarita", "Family", 135, "Wednesday");
+var tonfisk = Product("Tonfiskpizza", "Original", 82, "Thursday");
+var calzone = Product("Calzone", "Barn", 60, "Friday");
+var capricciosa = Product("Capricciosa", "Family", 130, "Saturday");
+var kottfars = Product("Köttfärspizza", "Family", 145, "Sunday");
+
+var pizzaArray = [vesuvio, kebab, margarita, tonfisk, calzone, capricciosa, kottfars];
+
+for (var i = 0; i < pizzaArray.length; i++) {
+    var pizzaArticle = document.createElement("article");
+    var pizzaFieldset = document.createElement("fieldset");
+    var pizzaLegend = document.createElement("legend");
+    var pizzaH3 = document.createElement("h3");
+    var pizzaSpan = document.createElement("span");
+    var pizzaDiv = document.createElement("div");
+
+    var pizzaDiv = document.getElementById("pizzaPlace");
+    pizzaDiv.appendChild(pizzaArticle);
+    pizzaArticle.appendChild(pizzaFieldset);
+    pizzaFieldset.appendChild(pizzaLegend);
+    pizzaFieldset.appendChild(pizzaH3);
+    pizzaFieldset.appendChild(pizzaSpan);
+    pizzaFieldset.appendChild(pizzaDiv);
+ 
+  pizzaLegend.innerHTML = pizzaArray[i].dayOfTheWeek;
+  pizzaH3.innerHTML = pizzaArray[i].name;
+  pizzaDiv.className += " " + "price";
+  pizzaDiv.id = pizzaArray[i].dayOfTheWeek;
+  pizzaDiv.innerHTML = pizzaArray[i].price + "kr";
+} 
+
+
+/*
+1. create 7 hamburger objects using literal notation 
+   use attributes name, size, dayOfTheWeek and price(page. 104 in book)
+   Please use the same html syntax of an article as in exercise1.
+2. create Product objects with constructor notation, 
+   use the parameters name, size, price, dayOfTheWeek  (page. 108 in book)
+3. add 7 drinks to the page using Product.
+4. add 7 pizzas to the page using Product.
+5. add 7 subs to the page using Product.
+6. GO to file FixIt.html
+*/
