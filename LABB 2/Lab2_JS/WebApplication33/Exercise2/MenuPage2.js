@@ -119,13 +119,13 @@ for (var i = 0; i < drinksArray.length; i++) {
 }
 
 //Uppgift 4
-var vesuvio = Product("Vesuvio", "Family", 120, "Monday");
-var kebab = Product("Kebabpizza", "Original", 75, "Tuesday");
-var margarita = Product("Margarita", "Family", 135, "Wednesday");
-var tonfisk = Product("Tonfiskpizza", "Original", 82, "Thursday");
-var calzone = Product("Calzone", "Barn", 60, "Friday");
-var capricciosa = Product("Capricciosa", "Family", 130, "Saturday");
-var kottfars = Product("Köttfärspizza", "Family", 145, "Sunday");
+var vesuvio = new Product("Vesuvio", "Family", 120, "Monday");
+var kebab = new Product("Kebabpizza", "Original", 75, "Tuesday");
+var margarita = new Product("Margarita", "Family", 135, "Wednesday");
+var tonfisk = new Product("Tonfiskpizza", "Original", 82, "Thursday");
+var calzone = new Product("Calzone", "Barn", 60, "Friday");
+var capricciosa = new Product("Capricciosa", "Family", 130, "Saturday");
+var kottfars = new Product("Köttfärspizza", "Family", 145, "Sunday");
 
 var pizzaArray = [vesuvio, kebab, margarita, tonfisk, calzone, capricciosa, kottfars];
 
@@ -135,7 +135,7 @@ for (var i = 0; i < pizzaArray.length; i++) {
     var pizzaLegend = document.createElement("legend");
     var pizzaH3 = document.createElement("h3");
     var pizzaSpan = document.createElement("span");
-    var pizzaDiv = document.createElement("div");
+    var pizzaDiven = document.createElement("div");
 
     var pizzaDiv = document.getElementById("pizzaPlace");
     pizzaDiv.appendChild(pizzaArticle);
@@ -143,13 +143,13 @@ for (var i = 0; i < pizzaArray.length; i++) {
     pizzaFieldset.appendChild(pizzaLegend);
     pizzaFieldset.appendChild(pizzaH3);
     pizzaFieldset.appendChild(pizzaSpan);
-    pizzaFieldset.appendChild(pizzaDiv);
+    pizzaFieldset.appendChild(pizzaDiven);
  
   pizzaLegend.innerHTML = pizzaArray[i].dayOfTheWeek;
   pizzaH3.innerHTML = pizzaArray[i].name;
-  pizzaDiv.className += " " + "price";
-  pizzaDiv.id = pizzaArray[i].dayOfTheWeek;
-  pizzaDiv.innerHTML = pizzaArray[i].price + "kr";
+  pizzaDiven.className += " " + "price";
+  pizzaDiven.id = pizzaArray[i].dayOfTheWeek;
+  pizzaDiven.innerHTML = pizzaArray[i].price + "kr";
 } 
 
 
