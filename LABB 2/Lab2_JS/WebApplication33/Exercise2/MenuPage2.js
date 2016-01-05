@@ -15,6 +15,8 @@
 //DRINKS
 //Subs 
 
+
+
 //Uppgift 1
 var mondayBurger = {
     name: "Monday Burger",
@@ -59,18 +61,56 @@ var sundayBurger = {
     price: 95
 }
 
-var article = document.createElement("article");
-var fieldset = document.createElement("fieldset");
-var legend = document.createElement("legend");
-var h3 = document.createElement("h3");
+var burgerArray = [mondayBurger, tuesdayBurger, wednesdayBurger, thursdayBurger, fridayBurger, saturdayBurger, sundayBurger];
 
+for (var i = 0; i < burgerArray.length; i++) {
+    var article = document.createElement("article");
+    var fieldset = document.createElement("fieldset");
+    var legend = document.createElement("legend");
+    var h3 = document.createElement("h3");
+    var span = document.createElement("span");
+    var div = document.createElement("div");
 
- //<article>
- //       <fieldset>
- //           <legend>Monday Burger</legend>
- //           <h3>Pepper burger</h3>
- //           <span></span>
- //           <div class="price" id="monday">19.90</div>
- //       </fieldset>
- //   </article>
- //   <article>
+    var burgerDiv = document.getElementById("burgersPlace");
+    burgerDiv.appendChild(article);
+    article.appendChild(fieldset);
+    fieldset.appendChild(legend);
+    fieldset.appendChild(h3);
+    fieldset.appendChild(span);
+    fieldset.appendChild(div);
+
+    legend.innerHTML = burgerArray[i].dayOfTheWeek;
+    h3.innerHTML = burgerArray[i].name;
+    div.className += " " + "price";
+    div.id = burgerArray[i].dayOfTheWeek;
+    div.innerHTML = burgerArray[i].price + "kr";
+
+}
+
+//Uppgift 2 
+function Product(name, size, price, dayOfTheWeek) {
+    this.name = name;
+    this.size = size;
+    this.price = price;
+    this.dayOfTheWeek = dayOfTheWeek;
+}
+//Uppgift 3 
+var cocaCola = new Product("Coca Cola", "Large", 40, "Monday");
+var fanta = new Product("Fanta", "Large", 40, "Tuesday");
+var sprite = new Product("Sprite", "Medium", 32, "Wednesday");
+var coffee = new Product("Coffee", "Medium", 25, "Thursday");
+var soda = new Product("Soda", "Small", 26, "Friday");
+var appleJuice = new Product("Apple Juice", "Medium", 35, "Saturday");
+var orangeJuice = new Product("Orange Juice", "Large", 42, "Sunday");
+
+var drinksArray = [cocaCola, fanta, sprite, coffee, soda, appleJuice, orangeJuice];
+for (var i = 0; i < drinksArray.length; i++) {
+    var article = document.createElement("article");
+    var fieldset = document.createElement("fieldset");
+    var legend = document.createElement("legend");
+    var h3 = document.createElement("h3");
+    var span = document.createElement("span");
+    var div = document.createElement("div");
+
+    var drinksDiv = document.getElementById("drinksPlace");
+}
