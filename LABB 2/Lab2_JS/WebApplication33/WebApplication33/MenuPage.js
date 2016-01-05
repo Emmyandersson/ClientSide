@@ -52,7 +52,6 @@ function TodaysOffer() {
 
   day.innerHTML = Number(day.innerHTML) - (Number(day.innerHTML) * discount).toFixed(2);
 
-
 }
 
 
