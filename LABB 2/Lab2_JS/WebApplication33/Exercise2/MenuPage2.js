@@ -165,7 +165,29 @@ var SubSunday = new Product("Bomb of everything", "Large", 80, "Sunday");
 
 var subArray = [SubMonday, SubTuesday, SubWednesday, SubThursday, SubFriday, SubSaturday, SubSunday];
 
+for (var i = 0; i < subArray.length; i++) {
+    var subArticle = document.createElement("article");
+    var subFieldset = document.createElement("fieldset");
+    var subLegend = document.createElement("legend");
+    var subH3 = document.createElement("h3");
+    var subSpan = document.createElement("span");
+    var subDiven = document.createElement("div");
 
+    var subDiv = document.getElementById("subsPlace");
+    subDiv.appendChild(subArticle);
+    subArticle.appendChild(subFieldset);
+    subFieldset.appendChild(subLegend);
+    subFieldset.appendChild(subH3);
+    subFieldset.appendChild(subSpan);
+    subFieldset.appendChild(subDiven);
+
+    subLegend.innerHTML = subArray[i].dayOfTheWeek;
+    subH3.innerHTML = subArray[i].name;
+    subDiven.className += " " + "price";
+    subDiven.id = subArray[i].dayOfTheWeek;
+    subDiven.innerHTML = subArray[i].price + "kr";
+
+}
 
 /*
 1. create 7 hamburger objects using literal notation 
