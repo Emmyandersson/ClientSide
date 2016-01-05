@@ -94,6 +94,7 @@ function Product(name, size, price, dayOfTheWeek) {
     this.price = price;
     this.dayOfTheWeek = dayOfTheWeek;
 }
+
 //Uppgift 3 
 var cocaCola = new Product("Coca Cola", "Large", 40, "Monday");
 var fanta = new Product("Fanta", "Large", 40, "Tuesday");
@@ -104,13 +105,28 @@ var appleJuice = new Product("Apple Juice", "Medium", 35, "Saturday");
 var orangeJuice = new Product("Orange Juice", "Large", 42, "Sunday");
 
 var drinksArray = [cocaCola, fanta, sprite, coffee, soda, appleJuice, orangeJuice];
+
 for (var i = 0; i < drinksArray.length; i++) {
-    var article = document.createElement("article");
-    var fieldset = document.createElement("fieldset");
-    var legend = document.createElement("legend");
-    var h3 = document.createElement("h3");
-    var span = document.createElement("span");
-    var div = document.createElement("div");
+    var drinkArticle = document.createElement("article");
+    var drinkFieldset = document.createElement("fieldset");
+    var drinkLegend = document.createElement("legend");
+    var drinkH3 = document.createElement("h3");
+    var drinkSpan = document.createElement("span");
+    var drinkDiv = document.createElement("div");
 
     var drinksDiv = document.getElementById("drinksPlace");
+    drinksDiv.appendChild(drinkArticle);
+    drinkArticle.appendChild(drinkFieldset);
+    drinkFieldset.appendChild(drinkLegend);
+    drinkFieldset.appendChild(drinkH3);
+    drinkFieldset.appendChild(drinkSpan);
+    drinkFieldset.appendChild(drinkDiv);
+
+    drinkLegend.innerHTML = drinksArray[i].dayOfTheWeek;
+    drinkH3.innerHTML = drinksArray[i].name;
+    drinkDiv.className += " " + "price";
+    drinkDiv.id = drinksArray[i].dayOfTheWeek;
+    drinkDiv.innerHTML = drinksArray[i].price + "kr";
+
+
 }
