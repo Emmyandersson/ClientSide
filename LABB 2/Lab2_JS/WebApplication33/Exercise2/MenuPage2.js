@@ -153,6 +153,20 @@ for (var i = 0; i < pizzaArray.length; i++) {
 } 
 
 
+
+//Uppgift 5
+var SubMonday = new Product("Vegetariana", "Large", 54, "Monday");
+var SubTuesday = new Product("Meat loaf sub", "Large", 64, "Tuesday");
+var SubWednesday = new Product("Cheese and Olive sub", "Medium", 44, "Wednesday");
+var SubThursday = new Product("Bacon and cheese","Large", 66, "Thursday");
+var SubFriday = new Product("Tomato Cheese Ham", "Large", 60, "Friday");
+var SubSaturday = new Product("Turkey Cheese Cucumber", "Large", 55, "Saturday");
+var SubSunday = new Product("Bomb of everything", "Large", 80, "Sunday");
+
+var subArray = [SubMonday, SubTuesday, SubWednesday, SubThursday, SubFriday, SubSaturday, SubSunday];
+
+
+
 /*
 1. create 7 hamburger objects using literal notation 
    use attributes name, size, dayOfTheWeek and price(page. 104 in book)
