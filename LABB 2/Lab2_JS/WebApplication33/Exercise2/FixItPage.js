@@ -11,6 +11,36 @@ with an alert that shows the result when the box is clicked!
   Use properties creatively to display things at the html page
 4.Add a stylesheet that displays the changed words in fat font and in red.
 5. PLay with the Methods 
+
+Bonus exercises:
+### Demo page 141:###
+-Download the code to the book. Wipe the code from the js-file and rewrite it with the help from the book.
+-For additional reading and training go to: http://www.w3schools.com/jsref/jsref_obj_string.asp
+ and look at JS String, JS Number, JS Math and JS Date
+
+*/
+//Uppgift 3:
+
+//Properties
+//alert("inre höjd " + window.innerHeight + " pixlar");
+//alert("Den nuvarande URL:en är: " + window.location);
+//alert("Hur långt sidan scrollats : " + window.pageYOffset);
+//var text = document.getElementById("testar");
+//text.innerHTML = "Inre bredden på sidan: " + window.innerWidth;
+//// Dessa ligger inte i CSSen pga att den kom senare i uppgiften. 
+//text.style.color = "pink";
+//text.style.backgroundColor = "black";
+
+//Uppgift 4:
+//    <link href="StyleSheet1.css" rel="stylesheet" />  - ligger i htmlfilen..
+
+//Uppgift 5
+//Metoderna
+//window.print("Print me!");
+//window.open("http://www.hd.se");
+//window.alert("Hejsan!");
+
+/*
 ### DOM page 126:###
 6. Play with the DOM-properties
 
@@ -29,28 +59,12 @@ with an alert that shows the result when the box is clicked!
 ### Date object###
 12. Calculate how many days it's until your birthday and present it.
 13. Calculate how many minutes old you are and present it.
-
-Bonus exercises:
-### Demo page 141:###
--Download the code to the book. Wipe the code from the js-file and rewrite it with the help from the book.
--For additional reading and training go to: http://www.w3schools.com/jsref/jsref_obj_string.asp
- and look at JS String, JS Number, JS Math and JS Date
-
 */
-//Uppgift 3:
 
-//Properties
-alert("inre höjd " + window.innerHeight + " pixlar");
-alert("Den nuvarande URL:en är: " + window.location);
-alert("Hur långt sidan scrollats : " + window.pageYOffset);
-var text = document.getElementById("testar");
-text.innerHTML = "Inre bredden på sidan: " + window.innerWidth;
-text.style.color = "pink";
-text.style.backgroundColor = "black";
+//Uppgift 6:
+alert("Dokumentets titel är: " + document.title);
+alert("Senast detta dokumentet ändrades var: " + document.lastModified);
+alert("Nuvarande URL:en för dokumentet: " + document.URL);
+alert("Nuvarande domänen för dokumentet: " + document.domain);
 
-//Metoderna
-//window.print("Print me!");
-//window.open("http://www.hd.se");
-//window.alert("Hejsan!");
-
-//Uppgift 4:
+document.write("Här skriver jag till dokumentet!");
