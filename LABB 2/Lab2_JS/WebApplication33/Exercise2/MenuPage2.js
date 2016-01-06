@@ -57,29 +57,9 @@ var sundayBurger = {
 
 var burgerArray = [mondayBurger, tuesdayBurger, wednesdayBurger, thursdayBurger, fridayBurger, saturdayBurger, sundayBurger];
 
-for (var i = 0; i < burgerArray.length; i++) {
-    var article = document.createElement("article");
-    var fieldset = document.createElement("fieldset");
-    var legend = document.createElement("legend");
-    var h3 = document.createElement("h3");
-    var span = document.createElement("span");
-    var div = document.createElement("div");
+CreateElements_And_AddValuesToThem("burgersPlace", burgerArray, "../Images/Hamburger.png");
 
-    var burgerDiv = document.getElementById("burgersPlace");
-    burgerDiv.appendChild(article);
-    article.appendChild(fieldset);
-    fieldset.appendChild(legend);
-    fieldset.appendChild(h3);
-    fieldset.appendChild(span);
-    fieldset.appendChild(div);
 
-    legend.innerHTML = burgerArray[i].dayOfTheWeek;
-    h3.innerHTML = burgerArray[i].name;
-    div.className += " " + "price";
-    div.id = burgerArray[i].dayOfTheWeek;
-    div.innerHTML = burgerArray[i].price + "kr";
-
-}
 
 //Uppgift 2 
 function Product(name, size, price, dayOfTheWeek) {
@@ -88,6 +68,8 @@ function Product(name, size, price, dayOfTheWeek) {
     this.price = price;
     this.dayOfTheWeek = dayOfTheWeek;
 }
+
+
 
 //Uppgift 3 
 var cocaCola = new Product("Coca Cola", "Large", 40, "Monday");
@@ -100,30 +82,9 @@ var orangeJuice = new Product("Orange Juice", "Large", 42, "Sunday");
 
 var drinksArray = [cocaCola, fanta, sprite, coffee, soda, appleJuice, orangeJuice];
 
-for (var i = 0; i < drinksArray.length; i++) {
-    var drinkArticle = document.createElement("article");
-    var drinkFieldset = document.createElement("fieldset");
-    var drinkLegend = document.createElement("legend");
-    var drinkH3 = document.createElement("h3");
-    var drinkSpan = document.createElement("span");
-    var drinkDiv = document.createElement("div");
-
-    var drinksDiv = document.getElementById("drinksPlace");
-    drinksDiv.appendChild(drinkArticle);
-    drinkArticle.appendChild(drinkFieldset);
-    drinkFieldset.appendChild(drinkLegend);
-    drinkFieldset.appendChild(drinkH3);
-    drinkFieldset.appendChild(drinkSpan);
-    drinkFieldset.appendChild(drinkDiv);
-
-    drinkLegend.innerHTML = drinksArray[i].dayOfTheWeek;
-    drinkH3.innerHTML = drinksArray[i].name;
-    drinkDiv.className += " " + "price";
-    drinkDiv.id = drinksArray[i].dayOfTheWeek;
-    drinkDiv.innerHTML = drinksArray[i].price + "kr";
+ CreateElements_And_AddValuesToThem("drinksPlace", drinksArray, "../Images/Drink.PNG");
 
 
-}
 
 //Uppgift 4
 var vesuvio = new Product("Vesuvio", "Family", 120, "Monday");
@@ -135,29 +96,7 @@ var capricciosa = new Product("Capricciosa", "Family", 130, "Saturday");
 var kottfars = new Product("Köttfärspizza", "Family", 145, "Sunday");
 
 var pizzaArray = [vesuvio, kebab, margarita, tonfisk, calzone, capricciosa, kottfars];
-
-for (var i = 0; i < pizzaArray.length; i++) {
-    var pizzaArticle = document.createElement("article");
-    var pizzaFieldset = document.createElement("fieldset");
-    var pizzaLegend = document.createElement("legend");
-    var pizzaH3 = document.createElement("h3");
-    var pizzaSpan = document.createElement("span");
-    var pizzaDiven = document.createElement("div");
-
-    var pizzaDiv = document.getElementById("pizzaPlace");
-    pizzaDiv.appendChild(pizzaArticle);
-    pizzaArticle.appendChild(pizzaFieldset);
-    pizzaFieldset.appendChild(pizzaLegend);
-    pizzaFieldset.appendChild(pizzaH3);
-    pizzaFieldset.appendChild(pizzaSpan);
-    pizzaFieldset.appendChild(pizzaDiven);
- 
-  pizzaLegend.innerHTML = pizzaArray[i].dayOfTheWeek;
-  pizzaH3.innerHTML = pizzaArray[i].name;
-  pizzaDiven.className += " " + "price";
-  pizzaDiven.id = pizzaArray[i].dayOfTheWeek;
-  pizzaDiven.innerHTML = pizzaArray[i].price + "kr";
-} 
+CreateElements_And_AddValuesToThem("pizzaPlace", pizzaArray, "../Images/Pizza.png");
 
 
 
@@ -172,35 +111,35 @@ var SubSunday = new Product("Bomb of everything", "Large", 80, "Sunday");
 
 var subArray = [SubMonday, SubTuesday, SubWednesday, SubThursday, SubFriday, SubSaturday, SubSunday];
 
-for (var i = 0; i < subArray.length; i++) {
-    var subArticle = document.createElement("article");
-    var subFieldset = document.createElement("fieldset");
-    var subLegend = document.createElement("legend");
-    var subH3 = document.createElement("h3");
-    var subSpan = document.createElement("span");
-    var subDiven = document.createElement("div");
 
-    var subDiv = document.getElementById("subsPlace");
-    subDiv.appendChild(subArticle);
-    subArticle.appendChild(subFieldset);
-    subFieldset.appendChild(subLegend);
-    subFieldset.appendChild(subH3);
-    subFieldset.appendChild(subSpan);
-    subFieldset.appendChild(subDiven);
-
-    subLegend.innerHTML = subArray[i].dayOfTheWeek;
-    subH3.innerHTML = subArray[i].name;
-    subDiven.className += " " + "price";
-    subDiven.id = subArray[i].dayOfTheWeek;
-    subDiven.innerHTML = subArray[i].price + "kr";
-
-}
+CreateElements_And_AddValuesToThem("subsPlace", subArray, "../Images/Subs.PNG");
 
 
+//FUNKTION: 
+function CreateElements_And_AddValuesToThem(divId, productArray, imageurl) {
 
-//Function för forloop där man lägger till alla elementen.
+    for (var i = 0; i < productArray.length; i++) {
 
-function CreateElements_And_AddValuesToThem(divId, productArray, imageURL) {
+        var article = document.createElement("article");
+        var fieldset = document.createElement("fieldset");
+        var legend = document.createElement("legend");
+        var h3 = document.createElement("h3");
+        var span = document.createElement("span");
+        var div = document.createElement("div");
 
-    
+        var productDiv = document.getElementById(divId);
+        productDiv.appendChild(article);
+        article.appendChild(fieldset);
+        fieldset.appendChild(legend);
+        fieldset.appendChild(h3);
+        fieldset.appendChild(span);
+        fieldset.appendChild(div);
+
+        legend.innerHTML = productArray[i].dayOfTheWeek;
+        h3.innerHTML = productArray[i].name;
+        div.className += " " + "price";
+        div.id = productArray[i].dayOfTheWeek;
+        div.innerHTML = productArray[i].price + "kr";
+
+    }
 }
