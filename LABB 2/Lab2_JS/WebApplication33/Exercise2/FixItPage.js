@@ -45,19 +45,7 @@ Bonus exercises:
 
 ### String objects page 128, 129: ###
 
-7. Save the the text from the makeMeAnArray-paragraph into an array.
-8. Use all the string methods and propertys allong with the array
 
-### String objects page 132: ###
-9. check if the 4th element in the array is a number
-
-### Math page 134: ###
-10. Round one of the numbers in the paragraph up/down
-11. replace the 3rd word with PI then roud it to the nearest integer
-
-### Date object###
-12. Calculate how many days it's until your birthday and present it.
-13. Calculate how many minutes old you are and present it.
 */
 
 //Uppgift 6:
@@ -82,6 +70,26 @@ Bonus exercises:
 //alert(chars.indexOf("ej"));
 //alert(chars.lastIndexOf("h"));
 
-var saying = "Hejsan Freddie";
-alert(saying +". Den texten ska bli i stora bokstäver => "+ saying.toUpperCase());
-alert("Bokstaven på femte positionen i strängen '"+ saying + "' är: "+ saying.charAt(5));
+//var saying = "Hejsan Freddie";
+//alert(saying +". Den texten ska bli i stora bokstäver => "+ saying.toUpperCase());
+//alert("Bokstaven på femte positionen i strängen '"+ saying + "' är: "+ saying.charAt(5));
+//alert("Detta ska ta ut bokstäverna mellan 3,10:  '" + saying.substring(3, 10) + "'");
+
+//Uppgift 7
+var array = document.getElementById("makeMeAnArray").innerHTML.split(" ");
+alert("Längden på arrayen: "+ array.length);
+alert("En del av Arrayen i uppercase: " + array[5].toUpperCase() );
+
+//7. Save the the text from the makeMeAnArray-paragraph into an array.
+//8. Use all the string methods and propertys allong with the array
+
+//### String objects page 132: ###
+//9. check if the 4th element in the array is a number
+
+//### Math page 134: ###
+//10. Round one of the numbers in the paragraph up/down
+//11. replace the 3rd word with PI then roud it to the nearest integer
+
+//### Date object###
+//12. Calculate how many days it's until your birthday and present it.
+//13. Calculate how many minutes old you are and present it.
