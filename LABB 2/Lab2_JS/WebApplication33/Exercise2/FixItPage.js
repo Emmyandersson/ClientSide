@@ -20,7 +20,6 @@ Bonus exercises:
 
 */
 //Uppgift 3:
-
 //Properties
 //alert("inre höjd " + window.innerHeight + " pixlar");
 //alert("Den nuvarande URL:en är: " + window.location);
@@ -62,9 +61,27 @@ Bonus exercises:
 */
 
 //Uppgift 6:
-alert("Dokumentets titel är: " + document.title);
-alert("Senast detta dokumentet ändrades var: " + document.lastModified);
-alert("Nuvarande URL:en för dokumentet: " + document.URL);
-alert("Nuvarande domänen för dokumentet: " + document.domain);
+//alert("Dokumentets titel är: " + document.title);
+//alert("Senast detta dokumentet ändrades var: " + document.lastModified);
+//alert("Nuvarande URL:en för dokumentet: " + document.URL);
+//alert("Nuvarande domänen för dokumentet: " + document.domain);
 
-document.write("Här skriver jag till dokumentet!");
+//document.write("Här skriver jag till dokumentet!");
+//alert(document.querySelectorAll("#test"));
+
+////String Objects :
+//var testString = "hejsanhejsan på dig svejsan!";
+//alert("Längden på en string: " + testString.length);
+//var toUpper = "denna textsträngen ska bli upperCase";
+//alert(toUpper +" : "+toUpper.toUpperCase());
+//var toLower = "denna textstärngen ska bli i lowerCase.";
+//alert(toLower + " : " + toLower.toLowerCase());
+
+//var chars = "hejhejhej";
+//alert(chars[2]);
+//alert(chars.indexOf("ej"));
+//alert(chars.lastIndexOf("h"));
+
+var saying = "Hejsan Freddie";
+alert(saying +". Den texten ska bli i stora bokstäver => "+ saying.toUpperCase());
+alert("Bokstaven på femte positionen i strängen '"+ saying + "' är: "+ saying.charAt(5));
