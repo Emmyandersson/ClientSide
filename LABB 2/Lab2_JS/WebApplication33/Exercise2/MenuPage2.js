@@ -196,3 +196,11 @@ for (var i = 0; i < subArray.length; i++) {
 
 }
 
+
+
+//Function för forloop där man lägger till alla elementen.
+
+function CreateElements_And_AddValuesToThem(divId, productArray, imageURL) {
+
+    
+}

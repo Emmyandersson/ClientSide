@@ -78,7 +78,8 @@ Bonus exercises:
 //Uppgift 7
 var array = document.getElementById("makeMeAnArray").innerHTML.split(" ");
 alert("Längden på arrayen: "+ array.length);
-alert("En del av Arrayen i uppercase: " + array[5].toUpperCase() );
+console.log("En del av Arrayen i uppercase: " + array[3]);
+
 
 //7. Save the the text from the makeMeAnArray-paragraph into an array.
 //8. Use all the string methods and propertys allong with the array
