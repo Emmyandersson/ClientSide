@@ -126,6 +126,8 @@ function CreateElements_And_AddValuesToThem(divId, productArray, imageurl) {
         var h3 = document.createElement("h3");
         var span = document.createElement("span");
         var div = document.createElement("div");
+        var image = document.createElement("img");
+        image.setAttribute("src", imageurl);
 
         var productDiv = document.getElementById(divId);
         productDiv.appendChild(article);
@@ -134,6 +136,7 @@ function CreateElements_And_AddValuesToThem(divId, productArray, imageurl) {
         fieldset.appendChild(h3);
         fieldset.appendChild(span);
         fieldset.appendChild(div);
+        span.appendChild(image);
 
         legend.innerHTML = productArray[i].dayOfTheWeek;
         h3.innerHTML = productArray[i].name;
