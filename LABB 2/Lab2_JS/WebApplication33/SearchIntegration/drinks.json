@@ -1,0 +1,30 @@
+﻿[
+  {
+    "name": "Long Island Ice Tea",
+    "about": "Fin och god dricka i ett högt glas",
+    "url_image": "Drink.png"
+  },
+  {
+    "name": "Staropramen",
+    "about": "Öl från Tjeckien. Speciell för Prag- Den är gjord av vattnet från floden som rinner genom staden.",
+    "url_image": "Drink.png"
+
+  },
+  {
+    "name": "Coca Cola",
+    "about": "God läsk -speciellt med is i på sommaren",
+    "url_image": "Drink.png"
+
+  },
+  {
+    "name": "Fanta Exotic",
+    "about": "Smakfull läsk men inte alls törstsläckande.",
+    "url_image": "Drink.png"
+  },
+  {
+    "name": "Cafe Latte",
+    "about": "Kaffe med ångad mjölk. Supergott.",
+    "url_image": "Drink.png"
+  }
+
+]

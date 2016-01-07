@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="burger.json" />
+    <Content Include="drinks.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
