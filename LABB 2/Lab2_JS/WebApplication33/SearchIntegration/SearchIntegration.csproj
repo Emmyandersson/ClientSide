@@ -66,11 +66,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Index.html" />
     <Content Include="packages.config" />
     <Content Include="burger.json" />
     <Content Include="drinks.json" />
     <Content Include="pizza.json" />
+    <None Include="Scripts\jquery-2.1.0.intellisense.js" />
+    <None Include="Scripts\jquery-2.1.0-vsdoc.js" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
+    <Content Include="Stilig.css" />
     <Content Include="Subs.json" />
+    <Content Include="Scripts\jquery-2.1.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

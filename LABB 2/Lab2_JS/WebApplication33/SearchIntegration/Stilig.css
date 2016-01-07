@@ -1,0 +1,89 @@
+﻿body {
+    background-color: pink;
+}
+
+#searchArea {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+    -ms-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    background-color: lightblue;
+}
+ #searchArea label {
+        color: hotpink;
+        font: 1.2rem times new roman bold;
+    }
+
+
+ #update {
+    margin: 5px auto;
+    border-top: 3px papayawhip dotted;
+    width: 70%;
+}
+
+    #update ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #update ul li {
+            width: 100%;
+            padding: 0 20px;
+            background-color: lightcoral;
+            padding-bottom: 10px;
+            height: 100px;
+            overflow: hidden;
+            border-bottom: 1px dotted black;
+            border-radius: 10px;
+            -webkit-animation: opacity 1s;
+            -moz-animation: opacity 1s;
+            -ms-animation: opacity 1s;
+            -o-animation: opacity 1s;
+            animation: opacity 1s;
+            -webkit-transition: height 0.3s ease-out;
+            -moz-transition: height 0.3s ease-out;
+            -ms-transition: height 0.3s ease-out;
+            -o-transition: height 0.3s ease-out;
+            transition: height 0.3s ease-out;
+        }
+
+#update li:hover {
+        background-color: coral;
+        height: 250px;
+        min-height: 100px;
+        overflow: visible;
+    }
+
+@-moz-keyframes opacity {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
