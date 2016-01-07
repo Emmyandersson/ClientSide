@@ -110,12 +110,18 @@ alert(Math.round(array[2]));
 
 var today = new Date();
 var myBirthday = new Date(today.getFullYear(), 01, 5); // 5 februari. 
-if (today.getMonth() === 02 && today.getDate() > 7) { // kontrollerar om min födelsedag har passerat i år.
+if (today.getMonth() === 02 && today.getDate() > 7) { // kontrollerar om min födelsedag har passerat i år. (Random siffror)
    myBirthday.setFullYear(myBirthday.getFullYear() + 1); //Nästa födelsedag
 }
+var oneDayInMilliSeconds = 1000 * 60 * 60 * 24;
+var daysUntilNextBirthday = Math.ceil((myBirthday.getTime() - today.getTime())) / (oneDayInMilliSeconds);
 
+// ett dygn är 1440 minuter
+var minutesLeft = Math.ceil(daysUntilNextBirthday * 1440);
 
-document.getElementById("birthdayPresentation").innerHTML = 
+document.getElementById("birthdayPresentation").innerHTML = daysUntilNextBirthday.toFixed(0) + " dagar kvar tills jag fyller år nästa gång (5 februari). <br/>";
+
+document.getElementById("minutePresentation").innerHTML = minutesLeft + " minuter tills nästa födelsedag - den 5 februari";
 //### Date object###
 //12. Calculate how many days it's until your birthday and present it.
 //13. Calculate how many minutes old you are and present it.
