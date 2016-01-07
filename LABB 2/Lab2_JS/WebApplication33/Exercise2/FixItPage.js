@@ -46,6 +46,14 @@ Bonus exercises:
 ### String objects page 128, 129: ###
 
 
+//7. Save the the text from the makeMeAnArray-paragraph into an array.
+//8. Use all the string methods and propertys allong with the array
+
+
+
+
+//### String objects page 132: ###
+//9. check if the 4th element in the array is a number
 */
 
 //Uppgift 6:
@@ -75,24 +83,23 @@ Bonus exercises:
 //alert("Bokstaven på femte positionen i strängen '"+ saying + "' är: "+ saying.charAt(5));
 //alert("Detta ska ta ut bokstäverna mellan 3,10:  '" + saying.substring(3, 10) + "'");
 
-//Uppgift 7:
+//Uppgift 7 , 8 & 9:
 var array = document.getElementById("makeMeAnArray").innerHTML.trim().split(" ");
-alert("Längden på arrayen: " + array.length);
-alert("Ordet på position 3 i uppercase: "+array[3].toUpperCase());
-alert("Ordet på position 9 i lowercase: " + array[9].toLowerCase());
-alert( array[0]).charAt(4);
-console.log(array[0].indexOf("l"));
-console.log( array[0].lastIndexOf("n"));
+
+//alert("Längden på arrayen: " + array.length);
+//alert("Ordet på position 3 i uppercase: "+array[3].toUpperCase());
+//alert("Ordet på position 9 i lowercase: " + array[9].toLowerCase());
+//alert("Fjärde bokstaven i första ordet: "+ array[0].charAt(3));
+//console.log( array[0].indexOf("l"));
+//console.log(array[0].lastIndexOf("n"));
+//alert(array[0].substring(0, 3));
+//alert(array[0].replace("W", "*"));
+
+//alert(isNaN(array[4]));
+
+//Uppgift 10:
 
 
-
-
-
-//7. Save the the text from the makeMeAnArray-paragraph into an array.
-//8. Use all the string methods and propertys allong with the array
-
-//### String objects page 132: ###
-//9. check if the 4th element in the array is a number
 
 //### Math page 134: ###
 //10. Round one of the numbers in the paragraph up/down
