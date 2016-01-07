@@ -70,6 +70,7 @@
     <Content Include="burger.json" />
     <Content Include="drinks.json" />
     <Content Include="pizza.json" />
+    <Content Include="Subs.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

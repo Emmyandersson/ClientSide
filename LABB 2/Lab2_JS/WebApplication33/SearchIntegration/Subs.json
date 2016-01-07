@@ -1,0 +1,27 @@
+﻿[
+  {
+    "name": "Vegetariana",
+    "about": "En vegetarisk sub. Innehåller sallad tomat och gurka",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Meat Loaf Sub",
+    "about": "En sub som innehåller köttfärslimpa. Dressing finns också.",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Cheese and Olive Sub",
+    "about": "En sub som innehåller oliver och ost. Samt sallad.",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Bacon and Cheese",
+    "about": "En sub som innehåller ost och bacon. Extra god med BBQ-sås.",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Tomato Cheese Ham",
+    "about": "En sub som innehåller tomat ost och skinka",
+    "url_image": "subs.PNG"
+  }
+]
