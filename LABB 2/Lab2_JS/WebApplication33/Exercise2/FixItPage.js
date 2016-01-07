@@ -97,7 +97,12 @@ var array = document.getElementById("makeMeAnArray").innerHTML.trim().split(" ")
 
 //alert(isNaN(array[4]));
 
-//Uppgift 10:
+//Uppgift 10 & 11:
+
+alert(Math.ceil(array[5]));
+alert(Math.floor(array[5]));
+array[2] = 3.14;
+alert(Math.round(array[2]));
 
 
 
