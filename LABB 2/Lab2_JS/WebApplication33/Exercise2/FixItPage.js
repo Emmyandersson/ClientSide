@@ -49,11 +49,13 @@ Bonus exercises:
 //7. Save the the text from the makeMeAnArray-paragraph into an array.
 //8. Use all the string methods and propertys allong with the array
 
-
-
-
 //### String objects page 132: ###
 //9. check if the 4th element in the array is a number
+
+//### Math page 134: ###
+//10. Round one of the numbers in the paragraph up/down
+//11. replace the 3rd word with PI then roud it to the nearest integer
+
 */
 
 //Uppgift 6:
@@ -104,12 +106,16 @@ alert(Math.floor(array[5]));
 array[2] = 3.14;
 alert(Math.round(array[2]));
 
+//Uppgift 12 & 13:
+
+var today = new Date();
+var myBirthday = new Date(today.getFullYear(), 01, 5); // 5 februari. 
+if (today.getMonth() === 02 && today.getDate() > 7) { // kontrollerar om min födelsedag har passerat i år.
+   myBirthday.setFullYear(myBirthday.getFullYear() + 1); //Nästa födelsedag
+}
 
 
-//### Math page 134: ###
-//10. Round one of the numbers in the paragraph up/down
-//11. replace the 3rd word with PI then roud it to the nearest integer
-
+document.getElementById("birthdayPresentation").innerHTML = 
 //### Date object###
 //12. Calculate how many days it's until your birthday and present it.
 //13. Calculate how many minutes old you are and present it.
