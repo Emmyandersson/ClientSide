@@ -75,10 +75,17 @@ Bonus exercises:
 //alert("Bokstaven på femte positionen i strängen '"+ saying + "' är: "+ saying.charAt(5));
 //alert("Detta ska ta ut bokstäverna mellan 3,10:  '" + saying.substring(3, 10) + "'");
 
-//Uppgift 7
-var array = document.getElementById("makeMeAnArray").innerHTML.split(" ");
-alert("Längden på arrayen: "+ array.length);
-console.log("En del av Arrayen i uppercase: " + array[3]);
+//Uppgift 7:
+var array = document.getElementById("makeMeAnArray").innerHTML.trim().split(" ");
+alert("Längden på arrayen: " + array.length);
+alert("Ordet på position 3 i uppercase: "+array[3].toUpperCase());
+alert("Ordet på position 9 i lowercase: " + array[9].toLowerCase());
+alert( array[0]).charAt(4);
+console.log(array[0].indexOf("l"));
+console.log( array[0].lastIndexOf("n"));
+
+
+
 
 
 //7. Save the the text from the makeMeAnArray-paragraph into an array.
