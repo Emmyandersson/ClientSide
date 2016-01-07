@@ -1,0 +1,28 @@
+﻿[
+  {
+    "name": "Cheese Burger",
+    "about": "Jättegod cheeseburgare med cheddarost och ketchup",
+    "url_image": "Hamburger.png"
+
+  },
+  {
+    "name": "Happy Burger",
+    "about": "En glad hamburgare som innehåller ketchup sallad och dressing",
+    "url_image": "Hamburger.png"
+  },
+  {
+    "name": "Sad Burger",
+    "about": "En ledsen hamburgare som bara innehåller kött.",
+    "url_image": "Hamburger.png"
+  },
+  {
+    "name": "Awesome Burger",
+    "about": "En hamburgare man inte kan bli besviken av!",
+    "url_image": "Hamburger.png"
+  },
+  {
+    "name": "Old Burger",
+    "about": "En gammal hamburgare som ingen vill ha.",
+     "url_image": "Hamburger.png"
+  }
+]
