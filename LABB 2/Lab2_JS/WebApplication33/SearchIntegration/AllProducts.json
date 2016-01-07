@@ -1,0 +1,110 @@
+﻿[
+  {
+    "name": "Vesuvio",
+    "about": "Pizza med skinka ost och tomat. Enkel men god",
+    "url_image": "Pizza.png"
+  },
+  {
+    "name": "Kebabpizza",
+    "about": "En pizza med kebabkött. Extra god med vitlökssås och feferoni",
+    "url_image": "Pizza.png"
+  },
+  {
+    "name": "Calzone",
+    "about": "Inbakad pizza med tomat ost och skinka. Supergott.",
+    "url_image": "Pizza.png"
+  },
+  {
+    "name": "Capricciosa",
+    "about": "Pizza med tomat ost och svamp. Stark sås passar bra.",
+    "url_image": "Pizza.png"
+  },
+  {
+    "name": "Margarita",
+    "about": "Pizza med endast tomat och ost. Inget kött.",
+    "url_image": "Pizza.png"
+
+  },
+
+  {
+    "name": "Vegetariana",
+    "about": "En vegetarisk sub. Innehåller sallad tomat och gurka",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Meat Loaf Sub",
+    "about": "En sub som innehåller köttfärslimpa. Dressing finns också.",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Cheese and Olive Sub",
+    "about": "En sub som innehåller oliver och ost. Samt sallad.",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Bacon and Cheese",
+    "about": "En sub som innehåller ost och bacon. Extra god med BBQ-sås.",
+    "url_image": "subs.PNG"
+  },
+  {
+    "name": "Tomato Cheese Ham",
+    "about": "En sub som innehåller tomat ost och skinka",
+    "url_image": "subs.PNG"
+  },
+
+    {
+    "name": "Long Island Ice Tea",
+    "about": "Fin och god dricka i ett högt glas",
+    "url_image": "Drink.png"
+  },
+  {
+    "name": "Staropramen",
+    "about": "Öl från Tjeckien. Speciell för Prag- Den är gjord av vattnet från floden som rinner genom staden.",
+    "url_image": "Drink.png"
+
+  },
+  {
+    "name": "Coca Cola",
+    "about": "God läsk -speciellt med is i på sommaren",
+    "url_image": "Drink.png"
+
+  },
+  {
+    "name": "Fanta Exotic",
+    "about": "Smakfull läsk men inte alls törstsläckande.",
+    "url_image": "Drink.png"
+  },
+  {
+    "name": "Cafe Latte",
+    "about": "Kaffe med ångad mjölk. Supergott.",
+    "url_image": "Drink.png"
+  },
+  
+
+    {
+    "name": "Cheese Burger",
+    "about": "Jättegod cheeseburgare med cheddarost och ketchup",
+    "url_image": "Hamburger.png"
+
+  },
+  {
+    "name": "Happy Burger",
+    "about": "En glad hamburgare som innehåller ketchup sallad och dressing",
+    "url_image": "Hamburger.png"
+  },
+  {
+    "name": "Sad Burger",
+    "about": "En ledsen hamburgare som bara innehåller kött.",
+    "url_image": "Hamburger.png"
+  },
+  {
+    "name": "Awesome Burger",
+    "about": "En hamburgare man inte kan bli besviken av!",
+    "url_image": "Hamburger.png"
+  },
+  {
+    "name": "Old Burger",
+    "about": "En gammal hamburgare som ingen vill ha.",
+     "url_image": "Hamburger.png"
+  }
+]

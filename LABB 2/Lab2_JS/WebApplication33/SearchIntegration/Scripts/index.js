@@ -2,11 +2,12 @@
     $('#searchInput').keyup(function () {
         var searchField = $("#searchInput").val();
         var meExp = new RegExp(searchField, "i");
-        $.getJSON('burger.json', function (data) {
+
+        $.getJSON('allProducts.json', function (data) {
             var outPut = "<ul class='searchResults'> ";
 
-            $.each(data, function (key, value) {
-             
+            $.each(data, function(key, value) {
+
                 if ((value.name.search(meExp) !== -1) || (value.about.search(meExp) !== -1)) {
                     outPut += "<li>" +
                         "<p>" +
@@ -18,7 +19,8 @@
             });
             outPut += "</ul>";
             $('#update').html(outPut);
-
         });
+
     });
+
 });
